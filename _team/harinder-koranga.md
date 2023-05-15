@@ -1,11 +1,9 @@
 ---
 title: "Harinder Koranga"
 date: 2018-12-20T13:44:23+10:00
-image: ""
-jobtitle: "Developer"
-linkedinurl: ""
+image: "images/team/male-icon60x60.png"
+jobtitle: "Founder"
+linkedinurl: "https://linkedin.com/company/goismo"
 promoted: true
 weight: 2
 ---
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum arcu vitae elementum curabitur vitae nunc sed. Tortor at risus viverra adipiscing at in.

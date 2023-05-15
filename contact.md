@@ -4,13 +4,14 @@ layout: contact
 description: Contact
 ---
 
-Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae crimen habet Priamum nec.
+We go above and beyond to make things work. We do what it takes to get the job done, and we do what it takes. We don’t just design things, we design the future.
 
 | Day       | Opening Hours   |
 | --------- | --------------- |
-| Tuesday   | 8:30am - 5:00pm |
-| Wednesday | 8:30am - 5:00pm |
-| Thursday  | 8:30am - 5:00pm |
-| Friday    | 8:30am - 5:00pm |
-| Saturday  | 10:am - 4:00pm  |
+| Monday    | 7:30am - 5:00pm |
+| Tuesday   | 7:30am - 5:00pm |
+| Wednesday | 7:30am - 5:00pm |
+| Thursday  | 7:30am - 5:00pm |
+| Friday    | 7:30am - 5:00pm |
+| Saturday  | Closed          |
 | Saturday  | Closed          |

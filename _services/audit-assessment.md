@@ -1,10 +1,10 @@
 ---
-title: "Accounting"
-date: 2018-11-18T12:33:46+10:00
+title: "24x7 Audit and Assessment"
+date: 2023-05-22T12:33:46+10:00
 weight: 1
 ---
 
-Financial accounting (or financial accountancy) is the field of accounting concerned with the **summary, analysis and reporting** of financial transactions related to a business.
+The continous audit and assessment of your cybersecurity posture is a key component of your cybersecurity strategy. We provide a 24x7 audit and assessment service that will help you to identify and mitigate security risks in your organization.
 
 ![Accounting Services](/images/austin-distel-nGc5RT2HmF0-unsplash.jpg)
 

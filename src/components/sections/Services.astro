@@ -13,62 +13,65 @@ import c6 from "../../assets/pics/card-pic6.png";
 const cards = [
   {
     index: 1,
-    titleTop: "Search Engine",
-    titleBottom: "Optimization",
+    titleTop: "Engineering ",
+    titleBottom: "Services",
     img: c1,
     alt: "SEO",
-    link: "https://google.com",
+    desc: "Our engineering services provide end-to-end solutions that integrate privacy, safety, and security compliance directly into your product development cycle. This includes thorough testing, verification, and validation processes to ensure your products meet the rigorous standards of GDPR, ISO 26262, and ISO 21434. Our team assists with initial design, system integration, and iterative testing to guarantee your solution is both compliant and optimized for performance.",
   },
   {
     index: 2,
-    titleTop: "Pay-per-click",
-    titleBottom: "advertising",
+    titleTop: "Audit ",
+    titleBottom: "Services",
     img: c2,
     alt: "SEO",
-    link: "https://google.com",
-  },
-  {
-    index: 3,
-    titleTop: "Social Media",
-    titleBottom: "Marketing",
-    img: c3,
-    alt: "SEO",
-    link: "https://google.com",
-  },
-  {
-    index: 1,
-    titleTop: "Email",
-    titleBottom: "Marketing",
-    img: c4,
-    alt: "SEO",
-    link: "https://google.com",
+    desc:"Goismo's audit services deliver an exhaustive review of your systems and operations to identify and address compliance gaps. Our approach includes comprehensive verification steps, system testing, and documentation audits to ensure your processes align with current privacy and security regulations. We provide a clear path for maintaining compliance through proactive testing and remediation."
+
   },
   {
     index: 2,
-    titleTop: "Content",
-    titleBottom: "Creation",
-    img: c5,
+    titleTop: "Assessment ",
+    titleBottom: "Services",
+    img: c3,
     alt: "SEO",
-    link: "https://google.com",
+    desc:"Our assessment services focus on privacy, security, and safety risk analysis, offering Data Protection Impact Assessments (DPIA), Risk Operations Protection Assessments (RoPA), and Privacy Impact Assessments (PIA). Each assessment includes thorough testing and verification steps to validate system security, data protection, and risk mitigation measures. With our expert-led evaluations, you receive actionable insights to strengthen compliance, backed by rigorous testing protocols."
   },
-  {
-    index: 3,
-    titleTop: "Analytics and",
-    titleBottom: "Tracking",
-    img: c6,
-    alt: "SEO",
-    link: "https://google.com",
-  },
+  /*
+{
+  index: 1,
+  titleTop: "Email",
+  titleBottom: "Marketing",
+  img: c4,
+  alt: "SEO",
+  link: "https://google.com",
+},
+{
+  index: 2,
+  titleTop: "Content",
+  titleBottom: "Creation",
+  img: c5,
+  alt: "SEO",
+  link: "https://google.com",
+},
+{
+  index: 3,
+  titleTop: "Analytics and",
+  titleBottom: "Tracking",
+  img: c6,
+  alt: "SEO",
+  link: "https://google.com",
+}
+*/
 ];
 
 const description =
-  "At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include";
+  "In addition to our GoSeqr product, Goismo offers specialized services to support engineering, compliance audits, and assessments, with a focus on robust testing and verification.";
 ---
 
-<Section>
+<Section id="services">
   <div class="mt-[140px] mb-5">
     <SectionTitle sectionTitle="Services" description={description} />
-    <div class="grid lg:grid-cols-2 lg:grid-rows-3 gap-10">
+    <div class="grid lg:grid-cols-2 lg:grid-rows-2 gap-10">
       {
         cards.map((card) => (
           <ServiceCard
@@ -77,7 +80,7 @@ const description =
             titleBottom={card.titleBottom}
             img={card.img}
             alt={card.alt}
-            link={card.link}
+            desc={card.desc}
           />
         ))
       }

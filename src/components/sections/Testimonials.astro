@@ -1,17 +1,81 @@
 ---
 import SectionTitle from "../ui/SectionTitle.astro";
-import SwiperSlider from "../ui/SwiperSlider.astro";
+import TeamCard from "../ui/TeamCard.astro";
 import Section from "./Section.astro";
+
+
+const privacyFeatures = [
+  {
+    name: "Consent Management",
+    description:
+      "Enables the creation, sharing, and collection of user consents in response to privacy statements. This allows organizations to manage consent seamlessly and keep accurate records of all privacy agreements.",
+  },
+  {
+    name: "Privacy Document Creation and Distribution",
+    description:
+      "Supports the creation of detailed privacy documents that meet regulatory requirements and can be customized to fit organizational needs. These documents are distributed directly to vehicles for user transparency.",
+  },
+  {
+    name: "Data Usage Tracking and Policy Creation",
+    description:
+      "Tracks data set usage, allowing organizations to monitor which applications access specific data sets. Facilitates policy creation for data usage, ensuring alignment with standards and regulations.",
+  },
+  {
+    name: "Privacy Compliance Assessments (DPIA, RoPA, PIA)",
+    description:
+      "Includes tools for conducting DPIAs, RoPAs, and PIAs to evaluate data processing activities, document details, and proactively address privacy risks.",
+  },
+];
+
+const securityFeatures = [
+  {
+    name: "Item Definition",
+    description:
+      "Enables detailed descriptions of each system item, outlining its intended functions and operational limits, ensuring safety and security are built into development from the ground up.",
+  },
+  {
+    name: "Hazard Analysis and Risk Assessment (HARA)",
+    description:
+      "Identifies potential hazards related to each system item and assesses associated risks, enabling organizations to develop and implement effective safety measures to minimize incidents.",
+  },
+  {
+    name: "Threat Analysis and Risk Assessment (TARA)",
+    description:
+      "Provides a structured approach to identifying potential security threats, assessing their impact, prioritizing them, and establishing necessary countermeasures to secure systems proactively.",
+  },
+];
 ---
 
-<Section id="testimonials">
+<!-- Privacy Section -->
+<Section id="privacy">
   <div class="mt-20">
     <SectionTitle
-      sectionTitle="Testimonials"
-      description="Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services"
+      sectionTitle="GoSeqr Privacy"
+      description="The privacy component of GoSeqr is a comprehensive solution designed to simplify privacy management and compliance for businesses, especially those in the automotive sector. This tool covers the entire lifecycle of user data privacy—from creation to monitoring—ensuring organizations stay aligned with privacy standards like GDPR. Key features include:"
     />
-    <div class="rounded-[45px] bg-dark mb-[150px] text-white">
-      <SwiperSlider />
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-rows-2 gap-10">
+      <Fragment>
+        {privacyFeatures.map((feature, index) => (
+          <TeamCard key={index} name={feature.name} description={feature.description} />
+        ))}
+      </Fragment>
+    </div>
+  </div>
+</Section>
+
+<!-- Safety & Security Section -->
+<Section id="safety-security">
+  <div class="mt-20">
+    <SectionTitle
+      sectionTitle="GoSeqr Safety & Security"
+      description="The safety and security component of GoSeqr is designed to ensure that vehicles and related systems comply with safety (ISO 26262) and cybersecurity (ISO 21434) standards. It provides powerful tools to evaluate risks and define security requirements, with features tailored to the automotive sector. Key functions include:"
+    />
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-rows-2 gap-10">
+      <Fragment>
+        {securityFeatures.map((feature, index) => (
+          <TeamCard key={index} name={feature.name} description={feature.description} />
+        ))}
+      </Fragment>
     </div>
   </div>
 </Section>

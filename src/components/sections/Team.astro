@@ -1,23 +1,26 @@
 ---
 import SectionTitle from "../ui/SectionTitle.astro";
-import TeamCard from "../ui/TeamCard.astro";
 import Section from "./Section.astro";
 import decorForm from "../../assets/pics/proposal-pic.png";
 import { Image } from "astro:assets";
 
 const description =
-  "GoSeqr, a pioneering product by Goismo, delivers advanced engineering solutions in privacy, safety, and security compliance. Designed to seamlessly integrate with industry standards, GoSeqr helps businesses meet privacy regulations (GDPR), adhere to safety protocols (ISO 26262), and ensure robust cybersecurity (ISO 21434) in an increasingly complex digital landscape. Built by a team of engineers with extensive experience in the automotive and IT sectors, GoSeqr combines deep technical expertise with a strong commitment to compliance. Our solutions are crafted to address the unique challenges of these industries, providing a streamlined, user-friendly approach to regulatory adherence that supports businesses at every step. With GoSeqr, Goismo is driving a new era of compliance and trust—delivering security and peace of mind to businesses and their customers alike.";
----
+  "GoSeqr by Goismo offers advanced solutions for privacy, safety, and security compliance. It helps businesses meet GDPR privacy regulations, adhere to ISO 26262 safety standards, and ensure robust cybersecurity with ISO 21434. Designed by experienced engineers in the automotive and IT sectors, GoSeqr provides a user-friendly approach to regulatory adherence, addressing the unique challenges of these industries. GoSeqr is driving compliance and trust, delivering security and peace of mind to organizations and their customers.";
 
+---
 <Section id="about">
-  <div class="mt-[140px] flex flex-col lg:flex-row items-start gap-10">
+  <div class="mt-[140px] flex flex-col lg:flex-row items-start gap-10 bg-[#F3F3F3] rounded-[45px] p-[40px] relative">
     <!-- Left Side: About Us Description -->
-    <div class="lg:w-2/3">
+    <div class="lg:w-3/4 flex flex-col justify-center">
       <SectionTitle sectionTitle="About Us" description={description} />
     </div>
     <!-- Right Side: Image Display -->
-    <div class="lg:w-1/3 flex justify-start"> {/* Changed to justify-start to avoid space on the right */}
+    <div class="lg:w-1/3 flex justify-end hidden lg:flex">
       <Image src={decorForm} alt="Decorative Image" class="w-full h-auto object-cover" />
+    </div>
+    <!-- Responsive Image for Smaller Screens -->
+    <div class="lg:hidden w-full flex justify-center">
+      <Image src={decorForm} alt="Decorative Image" class="w-3/4 h-auto object-cover" />
     </div>
   </div>
 </Section>

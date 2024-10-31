@@ -7,32 +7,35 @@ const cards = [
   {
     index: 0,
     title:
-      "For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales.",
-    link: "https://google.com",
+      "An automotive manufacturer utilize GoSeqr Privacy to streamline consent management, reducing compliance inquiries and fostering user trust.",
+    link: "https://example.com/case-study1",
   },
   {
     index: 1,
     title:
-      "For a B2B software company, we developed an SEO strategy that resulted in a first page ranking for key keywords and a 200% increase in organic traffic.",
-    link: "https://google.com",
+      "An automotive firm employ GoSeqr Safety & Security for comprehensive risk assessments, leading to fewer safety incidents during development.",
+    link: "https://example.com/case-study2",
   },
   {
-    index: 1,
+    index: 3,
     title:
-      "For a national retail chain, we created a social media marketing campaign that increased followers by 25% and generated a 20% increase in online sales.",
-    link: "https://google.com",
+      "A cybersecurity firm use GoSeqr Safety & Security's tools to identify vulnerabilities, strengthening their security posture and reducing potential breach impacts.",
+    link: "https://example.com/case-study4",
   },
 ];
+
+
+
 
 import larrow from "../../assets/icon3.svg";
 import SectionTitle from "../ui/SectionTitle.astro";
 ---
 
 <Section id="cases">
-  <SectionTitle
-    sectionTitle="Use Cases"
-    description="Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies"
-  />
+<SectionTitle
+  sectionTitle="Use Cases"
+  description="Discover how businesses leverage GoSeqr's innovative solutions to enhance compliance, safety, and security through practical applications and real-world examples."
+/>
   <div class="flex flex-col lg:flex-row justify-between rounded-[45px] p-1">
     {
       cards.map((card) => (
@@ -40,7 +43,7 @@ import SectionTitle from "../ui/SectionTitle.astro";
           <div class="flex p-[60px] h-full bg-dark text-white rounded-[45px] m-[1px]">
             <div class="flex flex-col gap-5">
               <p>{card.title}</p>
-              <a href={card.link} class="flex items-center gap-[15px]">
+              <a href=# class="flex items-center gap-[15px]">
                 <span class="text-green">Case Info</span>
                 <picture>
                   <Image src={larrow} alt="Arrow pointing up right" />

@@ -7,19 +7,19 @@ const { index, titleTop, titleBottom, img, alt, link, desc } = Astro.props;
 
 <Card isUnderline={true}>
   <div
-    class={`h-[300px] w-full sm:h-full grid custom-grid lg:grid-cols-2 lg:grid-rows-2 p-8 sm:p-[50px] rounded-[45px] ${
+    class={`h-[280px] w-full grid custom-grid lg:grid-cols-2 lg:grid-rows-2 p-6 sm:p-8 rounded-[20px] ${
       index === 1 ? 'bg-white' : index === 2 ? 'bg-green' : 'bg-dark text-white'
     }`}
   >
     <!-- Title Section -->
     <div class="flex flex-col justify-start lg:row-start-1 lg:col-span-1">
-      <h3 class=`flex flex-col col-span-2 lg:col-span-1`>
-        <span class=`w-[fit-content] ${index === 1 ? 'greenhead' : 'whitehead'}`
-          >{titleTop}</span
-        >
-        <span class=`w-[fit-content] ${index === 1 ? 'greenhead' : 'whitehead'}`
-          >{titleBottom}</span
-        >
+      <h3 class="flex flex-col col-span-2 lg:col-span-1">
+        <span class={`w-[fit-content] ${index === 1 ? 'greenhead' : 'whitehead'}`}>
+          {titleTop}
+        </span>
+        <span class={`w-[fit-content] ${index === 1 ? 'greenhead' : 'whitehead'}`}>
+          {titleBottom}
+        </span>
       </h3>
     </div>
 
@@ -28,13 +28,13 @@ const { index, titleTop, titleBottom, img, alt, link, desc } = Astro.props;
       <Image
         src={img}
         alt={alt}
-        class="h-[100px] w-auto sm:h-auto sm:w-3/4 object-cover"
+        class="h-[80px] w-auto object-cover"
       />
     </picture>
 
     <!-- Description Section -->
     {desc && (
-      <p class="text-sm lg:text-base text-gray-700 mt-4 col-span-2 lg:row-start-2 lg:col-span-2">
+      <p class="text-xs lg:text-sm text-gray-700 mt-2 col-span-2 lg:row-start-2 lg:col-span-2">
         {desc}
       </p>
     )}
@@ -45,6 +45,7 @@ const { index, titleTop, titleBottom, img, alt, link, desc } = Astro.props;
   .custom-grid {
     grid-template-columns: 1fr auto;
     grid-template-rows: auto 1fr;
-    gap: 20px;
+    gap: 10px;
   }
 </style>
+

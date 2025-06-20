@@ -51,13 +51,14 @@ const securityFeatures = [
   <div class="mt-20">
     <SectionTitle
       sectionTitle="GoSeqr Privacy"
-      description="GoSeqr Privacy offers a comprehensive solution for managing data privacy and compliance, supporting businesses, especially in the automotive sector, to meet GDPR standards throughout the entire data lifecycle.Key features include:"
+      description="From consent forms to cross-border audits, GoSeqr Privacy handles the messy bits of data compliance—so you don't have to. Built especially for the fast-moving world of automotive, our all-in-one privacy solution keeps you aligned with GDPR every step of the data lifecycle.\n\nWhat GoSeqr Privacy brings to the table:"
     />
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-rows-2 gap-10">
       <Fragment>
-        {privacyFeatures.map((feature, index) => (
-          <TeamCard key={index} name={feature.name} description={feature.description} />
-        ))}
+        <TeamCard name="Consent Management" description="Managing user consent doesn't have to be complicated. GoSeqr Privacy enables organizations to easily create, share, and collect consent in response to privacy statements — ensuring a smooth, transparent process and accurate, audit-ready records every step of the way." />
+        <TeamCard name="Privacy Document Creation and Distribution" description="Creating privacy documents shouldn't feel like writing legal novels. GoSeqr Privacy helps you craft clear, compliant, and customizable documents tailored to your business needs. And because transparency matters, these are delivered directly to vehicles—keeping users informed and regulators satisfied, wherever the road takes them." />
+        <TeamCard name="Data Usage Tracking and Policy Creation" description="With GoSeqr Privacy, you get full visibility into how and where your data is used—tracking which applications access specific datasets. Create and enforce smart usage policies that align with internal standards and external regulations, so your data always stays in the right hands." />
+        <TeamCard name="Privacy Compliance Assessments (DPIA, RoPA, PIA)" description="Privacy risks don't send warning lights—but GoSeqr Privacy does. Whether it's DPIAs, RoPAs, or PIAs, our tools help you assess, document, and address data processing risks with precision. Stay proactive, stay protected, and keep your compliance engine running smoothly—mile after mile." />
       </Fragment>
     </div>
   </div>
@@ -68,13 +69,13 @@ const securityFeatures = [
   <div class="mt-20">
     <SectionTitle
       sectionTitle="GoSeqr Safety & Security"
-      description="GoSeqr Safety & Security ensures compliance with ISO 26262 and ISO 21434 standards, offering tools to evaluate risks and establish security requirements tailored for the automotive industry. Key functions include:"
+      description="In the high-stakes world of automotive, safety and security aren't optional—they're engineered in. GoSeqr Safety & Security helps you stay on track with ISO 26262 and ISO 21434 standards, offering smart tools to assess risks, define requirements, and embed safety into every system from day one.\n\nHere's what drives it:"
     />
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-rows-2 gap-10">
       <Fragment>
-        {securityFeatures.map((feature, index) => (
-          <TeamCard key={index} name={feature.name} description={feature.description} />
-        ))}
+        <TeamCard name="Item Definition" description="Every smart system starts with smart definitions. GoSeqr helps you break down each item—its purpose, its limits, and where it fits—so safety and security aren't just afterthoughts, but part of your blueprint from day one." />
+        <TeamCard name="Hazard Analysis and Risk Assessment (HARA)" description="No surprises, no near-misses. GoSeqr's HARA will help you identify potential hazards tied to each system item, assess the risks, and implement safety strategies that keep your systems—and users—out of harm's way." />
+        <TeamCard name="Threat Analysis and Risk Assessment (TARA)" description="Cyber threats don't knock—so we built a way to see them coming. GoSeqr's TARA framework guides you through spotting, scoring, and securing against threats early in the design process. Proactive protection, baked right in." />
       </Fragment>
     </div>
   </div>
